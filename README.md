@@ -124,3 +124,32 @@ import styles from './style.module.css';
 
 Componentes npm:
 import '@dile/ui/components/info-box/info-box.js';
+
+He implemenetado un alias 'src' en mi archivo vite.config.js
+
+src/
+assets/
+javascript.svg
+vite.svg
+js/
+main.js
+counter.js
+css/
+style.css
+style.module.css
+scss/
+styles.scss
+
+Nunca importar desde la carpeta public, No está permitido.
+Para usar la carpeta public para linkear algo se hace de otra manera
+usando algo similar a esto:
+
+const nombre './public/logo.png'
+
+Más ejemplos de rutas:
+
+antes del alias 'src':
+import javascriptLogo from './javascript.svg';
+import viteLogo from './vite.svg';
+
+import javascriptLogo from 'src/assets/javascript.svg';
