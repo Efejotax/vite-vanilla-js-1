@@ -83,3 +83,44 @@ Para recompilar se recomienda borrar la carpeta node_modules y volver a lanzar l
 
 git bash:
 rm -rf node_modules
+
+## Rama Desarrollo - Componentes
+
+https://www.npmjs.com/package/@dile/dile-info-box
+https://dile-components.com/components/dile-info-box/
+
+Installation:
+npm i @dile/ui
+npm i @dile/dile-info-box
+
+### Usage
+
+Import the component:
+import '@dile/ui/components/info-box/info-box.js';
+
+Use the component:
+<dile-info-box showCloseButton>Information message...</dile-info-box>
+
+https://www.npmjs.com/package/@spectrum-web-components/color-wheel
+
+npm i @spectrum-web-components/color-wheel
+
+Import the side effectful registration of <sp-color-wheel> via:
+
+import '@spectrum-web-components/color-wheel/sp-color-wheel.js';
+When looking to leverage the ColorWheel base class as a type and/or for extension purposes, do so via:
+
+import { ColorWheel } from '@spectrum-web-components/color-wheel';
+
+Nota: en el estandar de JS ES6 los imports son siempre rutas.
+Pero herramientas de desarrollo como Vite nos permiten
+integrar cosas como las de abajo.
+sacadas del main.js
+
+import './styles.css';
+
+Módulos:
+import styles from './style.module.css';
+
+Componentes npm:
+import '@dile/ui/components/info-box/info-box.js';

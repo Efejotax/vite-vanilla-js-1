@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import path from 'path';
 
 export default defineConfig({
   define: {
@@ -6,5 +7,10 @@ export default defineConfig({
   },
   build: {
     sourcemap: true,
+  },
+  resolve: {
+    alias: {
+      src: path.resolve(__dirname, 'src'),
+    },
   },
 });
