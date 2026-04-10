@@ -1,0 +1,8 @@
+/* src/style.module.css */
+/* Los estilos CSS de tipo módulo se deben exportar */
+/* Añaden un prefijo a los nombres de las clases */
+/* De esta manera pueden ser usadas en otros archivos */
+
+.red {
+  color: red;
+}
