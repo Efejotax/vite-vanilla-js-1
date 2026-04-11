@@ -1,3 +1,6 @@
+/* @tailwind base; */
+@import 'tailwindcss';
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -69,7 +72,10 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
+  /* font-family: inherit; --> Esta línea da error o warning por el EsLint*/
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
@@ -93,4 +99,35 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Estilos para centrar imagenes */
+
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos para los logos de Vite y JavaScript */
+.logos {
+  display: flex;
+  justify-content: center; /* centra todo el grupo */
+  align-items: center;
+  gap: 40px; /* separación entre logos */
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }

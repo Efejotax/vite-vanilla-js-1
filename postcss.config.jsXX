@@ -1,0 +1,10 @@
+// postcss.config.js requiere un export default
+// en Tailwind 4 no es necesario el fichero postcss.config.js
+// solo aplica en Tailwind 3 y versiones anteriores
+
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
