@@ -1,10 +1,11 @@
 // postcss.config.cjs  requiere modulo es6
 // en Tailwind 4 no es necesario el fichero postcss.config.js
 // solo aplica en Tailwind 3 y versiones anteriores
-
-// module.exports = {
-//   plugins: {
-//     tailwindcss: {},
-//     autoprefixer: {},
-//   },
-// };
+// extension .cjs --> module.exports ={}
+ 
+ module.exports = {
+   plugins: {
+     tailwindcss: {},
+     autoprefixer: {},
+   },
+ };

@@ -22,6 +22,7 @@ import 'src/components/ToggleSwitch.js';
 
 //const app = document.querySelector('#app')
 
+// template strings con interpolación y comillas invertidas:
 document.querySelector('#app').innerHTML = `
   <div>
   <div class="logos">
@@ -58,8 +59,8 @@ document.querySelector('#app').innerHTML = `
     <div class="center-box">
       <img
         src="/www.png"
-        alt="lupawww icono"
         class="center-img"
+        alt="lupa www icono"
       />
     </div>
     <dile-info-box showCloseButton title="Information">Information message from Dile UI / dile-info-box</dile-info-box>
@@ -71,7 +72,11 @@ document.querySelector('#app').innerHTML = `
     <p>api key: ${import.meta.env.VITE_API}</p>
     <h3>Icono globo terraqueo desde public</h3>
     <div class="center-box">
-    <img src="/sitio-web.png" class="icono" alt="icono globo terraqueo">
+    <img 
+      src="/sitio-web.png" 
+      class="icono" 
+      alt="icono globo terraqueo"
+    />
     </div>
   </div>
 `;
